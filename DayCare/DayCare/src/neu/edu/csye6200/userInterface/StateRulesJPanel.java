@@ -46,6 +46,8 @@ public class StateRulesJPanel extends javax.swing.JPanel {
         jTable4 = new javax.swing.JTable();
         jTable1 = new javax.swing.JTable();
 
+        setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel1.setText("Massachusetts Immunization Rules :");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -58,6 +60,7 @@ public class StateRulesJPanel extends javax.swing.JPanel {
             }
         });
 
+        jTable3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"HiB","1 - 4","6 Months"},

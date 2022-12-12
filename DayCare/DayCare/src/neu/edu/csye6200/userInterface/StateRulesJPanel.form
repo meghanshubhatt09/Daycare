@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+    </Property>
+  </Properties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -127,6 +132,11 @@
     </Component>
     <Component class="javax.swing.JTable" name="jTable3">
       <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
           <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        {&quot;HiB&quot;,&quot;1 - 4&quot;,&quot;6 Months&quot;},&#xa;        {&quot;DTaP&quot;, &quot;4&quot;, &quot;6 Months&quot;},&#xa;        {&quot;Polio&quot;, &quot;3&quot;, &quot;8 Months&quot;},&#xa;    },&#xa;    new String [] {&#xa;        &quot;Vaccine Name&quot;, &quot;Dosage&quot;, &quot;Duration&quot;&#xa;    }&#xa;)" type="code"/>
         </Property>

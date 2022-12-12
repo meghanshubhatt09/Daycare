@@ -52,11 +52,14 @@ public class RenewalJPanel extends javax.swing.JPanel {
         tblRenewalRecords = new javax.swing.JTable();
         btnRenew = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(255, 255, 255));
+
         lblRenewal.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         lblRenewal.setForeground(new java.awt.Color(0, 0, 153));
         lblRenewal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRenewal.setText("Renewal For Students");
 
+        tblRenewalRecords.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblRenewalRecords.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -67,8 +70,6 @@ public class RenewalJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblRenewalRecords);
 
-        btnRenew.setBackground(new java.awt.Color(0, 255, 255));
-        btnRenew.setForeground(new java.awt.Color(0, 0, 0));
         btnRenew.setText("Renew");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

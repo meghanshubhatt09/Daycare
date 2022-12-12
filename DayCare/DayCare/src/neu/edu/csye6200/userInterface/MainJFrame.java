@@ -68,21 +68,18 @@ public class MainJFrame extends javax.swing.JFrame {
         splitPane.setDividerSize(0);
         splitPane.setMinimumSize(new java.awt.Dimension(800, 25));
 
-        controlJPanel.setBackground(new java.awt.Color(0, 0, 153));
+        controlJPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         mainHeadingLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        mainHeadingLabel.setForeground(new java.awt.Color(255, 255, 255));
         mainHeadingLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         mainHeadingLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/iconfinder_menu-alt_134216.png"))); // NOI18N
         mainHeadingLabel.setText("Day Care");
         mainHeadingLabel.setToolTipText("Day Care");
 
-        adminBtn.setBackground(new java.awt.Color(0, 0, 153));
         adminBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        adminBtn.setForeground(new java.awt.Color(255, 255, 255));
         adminBtn.setText("Administrator");
         adminBtn.setToolTipText("Admin");
-        adminBtn.setBorder(null);
+        adminBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         adminBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         adminBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         adminBtn.setNextFocusableComponent(adminBtn);
@@ -92,19 +89,22 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
-        teacherBtn.setBackground(new java.awt.Color(0, 51, 153));
         teacherBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        teacherBtn.setForeground(new java.awt.Color(255, 255, 255));
         teacherBtn.setText("Teacher");
         teacherBtn.setToolTipText("teacher");
+        teacherBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         teacherBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         teacherBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        teacherBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                teacherBtnActionPerformed(evt);
+            }
+        });
 
-        studentBtn1.setBackground(new java.awt.Color(0, 0, 153));
         studentBtn1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        studentBtn1.setForeground(new java.awt.Color(255, 255, 255));
         studentBtn1.setText("Student");
         studentBtn1.setToolTipText("Student");
+        studentBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         studentBtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         studentBtn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         studentBtn1.addActionListener(new java.awt.event.ActionListener() {
@@ -113,23 +113,19 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
-        btnStateRules.setBackground(new java.awt.Color(0, 51, 153));
         btnStateRules.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        btnStateRules.setForeground(new java.awt.Color(255, 255, 255));
         btnStateRules.setText("State Rules");
-        btnStateRules.setBorder(null);
-        btnStateRules.setBorderPainted(false);
+        btnStateRules.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         btnStateRules.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnStateRulesActionPerformed(evt);
             }
         });
 
-        btnRenewal.setBackground(new java.awt.Color(0, 0, 153));
         btnRenewal.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        btnRenewal.setForeground(new java.awt.Color(255, 255, 255));
         btnRenewal.setText("Renewal ");
         btnRenewal.setToolTipText("Student");
+        btnRenewal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnRenewal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnRenewal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnRenewal.addActionListener(new java.awt.event.ActionListener() {
@@ -138,6 +134,7 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        logoutBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         logoutBtn.setText("Logout");
         logoutBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,7 +174,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(btnRenewal, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
                 .addComponent(logoutBtn)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
 
         splitPane.setLeftComponent(controlJPanel);
@@ -235,6 +232,10 @@ public class MainJFrame extends javax.swing.JFrame {
         dispose();
         
     }//GEN-LAST:event_logoutBtnActionPerformed
+
+    private void teacherBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teacherBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_teacherBtnActionPerformed
     public void classRoomJPanel(){
         classRoomJPanel = new ClassRoomJPanel(userProcessControllerJPanel);
         userProcessControllerJPanel.add("classRoomJPanel",classRoomJPanel);

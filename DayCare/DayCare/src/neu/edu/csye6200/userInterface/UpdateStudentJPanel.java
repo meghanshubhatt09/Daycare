@@ -177,7 +177,6 @@ public class UpdateStudentJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnUpdate.setBackground(new java.awt.Color(0, 255, 255));
         btnUpdate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnUpdate.setText("Update");
 
@@ -196,15 +195,12 @@ public class UpdateStudentJPanel extends javax.swing.JPanel {
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Immunization Info");
 
-        btnUpdateImmun.setBackground(new java.awt.Color(51, 255, 255));
         btnUpdateImmun.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnUpdateImmun.setText("Update Immunization");
 
-        btnDeleteImmun.setBackground(new java.awt.Color(153, 255, 255));
         btnDeleteImmun.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnDeleteImmun.setText("Delete Immunization");
 
-        btnAddImmun.setBackground(new java.awt.Color(153, 255, 255));
         btnAddImmun.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnAddImmun.setText("Add Immunization");
         btnAddImmun.addActionListener(new java.awt.event.ActionListener() {

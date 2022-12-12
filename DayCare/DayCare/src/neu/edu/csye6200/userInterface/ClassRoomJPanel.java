@@ -73,7 +73,6 @@ public class ClassRoomJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblClassRooms);
 
-        btnShowDetail.setBackground(new java.awt.Color(51, 255, 255));
         btnShowDetail.setText("Show Detail");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

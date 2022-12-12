@@ -117,9 +117,6 @@
     </Container>
     <Component class="javax.swing.JToggleButton" name="btnShowDetail">
       <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="33" type="rgb"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Show Detail"/>
       </Properties>
     </Component>

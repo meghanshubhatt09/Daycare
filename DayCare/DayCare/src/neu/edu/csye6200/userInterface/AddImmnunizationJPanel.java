@@ -78,7 +78,6 @@ public class AddImmnunizationJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnAddImmunization.setBackground(new java.awt.Color(102, 255, 255));
         btnAddImmunization.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnAddImmunization.setText("Add Immunization");
         btnAddImmunization.addActionListener(new java.awt.event.ActionListener() {
@@ -102,6 +101,7 @@ public class AddImmnunizationJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("PT Serif Caption", 1, 12)); // NOI18N
         jLabel6.setText("Select vaccine Id");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
