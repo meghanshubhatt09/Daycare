@@ -79,12 +79,13 @@ public class FileIO<T> {
 					String fname = fields[0];
 					String lname = fields[1];
                                         Date registerTime=new SimpleDateFormat("dd/MM/yyyy").parse(fields[2]);
-					int id = new Integer(fields[3]);
+					int id = Integer.parseInt(fields[3]);
                                         boolean isAssigned = fields[4].equalsIgnoreCase("true")?true:false;
                                         String classRoomName = isAssigned?fields[5]:null;
                                         String email = fields[6];
                                         String password = fields[7];
-                                        T t = (T) new Teacher(fname,lname,registerTime,id,isAssigned,classRoomName,email,password);
+                                        int credit = Integer.parseInt(fields[8]);
+                                        T t = (T) new Teacher(fname,lname,registerTime,id,isAssigned,classRoomName,email,password,credit);
 					data.add(t);	
 				}
                                 else if(pathToCsvFile.equalsIgnoreCase("stuImm.csv")){

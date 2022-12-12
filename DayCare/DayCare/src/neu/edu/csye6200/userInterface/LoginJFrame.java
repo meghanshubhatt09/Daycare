@@ -146,9 +146,9 @@ public class LoginJFrame extends javax.swing.JFrame {
             if (s.getEmailid().equalsIgnoreCase(txtFieldUsername.getText()) 
                     && s.getPassword().equalsIgnoreCase(txtFieldPassword.getText()) )
             {
-//                TeacherJFrame teacherjframe = new TeacherJFrame();
-//                teacherjframe.setVisible(true);
-//                dispose();
+                StudentJFrame studentjframe = new StudentJFrame(s);
+                                studentjframe.setVisible(true);
+                                dispose();
 
             }
         }

@@ -32,10 +32,12 @@ import neu.edu.csye6200.interfaces.ImmunizationDataManagement;
 import neu.edu.csye6200.interfaces.ImmunizationDataManagementFactory;
 import neu.edu.csye6200.interfaces.StudentDataManagement;
 import neu.edu.csye6200.interfaces.StudentDataMangementFactory;
+import neu.edu.csye6200.interfaces.TeacherDataManagementFactory;
 import neu.edu.csye6200.model.ClassRoom;
 import neu.edu.csye6200.model.Immunization;
 import neu.edu.csye6200.model.Rules;
 import neu.edu.csye6200.model.Student;
+import neu.edu.csye6200.model.Teacher;
 import neu.edu.csye6200.userInterface.StudentJPanel;
 
 public class StudentController {
@@ -456,6 +458,40 @@ studentJPanel.getUpdateStudentJPanel().getAddImmunJPanel().getTextFieldName().se
         studentJPanel.getAddStudentJPanel().getTxtPassword().setText("");
        
    }
+   
+   public ClassRoom getClassRoomForStudent(Student stud){
+        ClassRoom cl=null;
+        int age = stud.getAge();
+            for(ClassRoom c: DataStore.getInstance().getClassrooms()){
+                if(age>c.getMinAge() && age<=c.getMaxAge()){
+                    cl =c;
+                    break;
+                }
+            }
+       return cl;
+   }
+   
+   public Teacher getTeacherFromStudent(Student stud){
+       ClassRoom c = getClassRoomForStudent(stud);
+       List<Student> students = StudentDataMangementFactory.getFactoryInstance().getObject().getDataList(c.getMinAge(),c.getMaxAge());
+       List<Teacher> teachers = TeacherDataManagementFactory.getFactoryInstance().getObject().getDataList(c.getName());
+
+       int counter =0;
+
+       for(Student s: students){
+           counter+=1;
+           if(stud.getStuId()==s.getStuId()){
+              break;
+           }
+       }
+       teachers.forEach(System.out::print);
+       System.out.println(counter);
+    return teachers.get((int)counter/3);
+
+ 
+
+   }
+   
     
    
 }

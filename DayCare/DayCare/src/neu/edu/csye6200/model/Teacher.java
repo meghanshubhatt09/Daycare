@@ -19,7 +19,7 @@ public class Teacher extends Person{
 
     public Teacher(String firstName,String lastName,Date registerTime,int teachID,
             boolean isAssigned,String classRoomName,
-            String emailid, String password) {
+            String emailid, String password, int credit) {
         this.registerTime = registerTime;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -28,6 +28,7 @@ public class Teacher extends Person{
         this.isAssigned = isAssigned;
          this.emailid = emailid;
         this.password = password;
+        this.credits = credit;
     }
 
     public int getTeachID() {
@@ -84,7 +85,7 @@ public class Teacher extends Person{
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         String date = simpleDateFormat.format(registerTime);
         String name = isAssigned? classRoomName :"";
-        return  firstName + "," + lastName +","+date+","+teachID+","+ isAssigned+ "," +name + "," + emailid + "," + password;
+        return  firstName + "," + lastName +","+date+","+teachID+","+ isAssigned+ "," +name + "," + emailid + "," + password + "," + credits;
     }
     
     
