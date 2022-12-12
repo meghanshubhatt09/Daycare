@@ -17,6 +17,10 @@ import neu.edu.csye6200.model.Immunization;
 import neu.edu.csye6200.model.Student;
 import neu.edu.csye6200.model.Teacher;
 
+/**
+ *
+ * @author moinu
+ */
 public class FileIO<T> {
 
 	public static <T> void writeFile(List<T> data, Class<T> clazz, String fileName) {

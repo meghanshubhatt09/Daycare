@@ -19,6 +19,10 @@ import neu.edu.csye6200.userInterface.ClassRoomJPanel;
 import neu.edu.csye6200.userInterface.TeacherJFrame;
 import neu.edu.csye6200.userInterface.ViewStudentJPanel;
 
+/**
+ *
+ * @author moinu
+ */
 public class ClassRoomController {
     private ViewStudentJPanel viewJPanel;
     private ClassRoomJPanel classRoomPanel;

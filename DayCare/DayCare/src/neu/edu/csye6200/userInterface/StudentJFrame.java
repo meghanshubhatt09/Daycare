@@ -13,7 +13,7 @@ import neu.edu.csye6200.model.Teacher;
 
 /**
  *
- * @author meghanshubhatt
+ * @author moinu
  */
 public class StudentJFrame extends javax.swing.JFrame {
 
@@ -57,6 +57,7 @@ public class StudentJFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         txtFieldReview = new javax.swing.JTextField();
         btnDone = new javax.swing.JButton();
+        jBtnBack = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -85,6 +86,13 @@ public class StudentJFrame extends javax.swing.JFrame {
         btnDone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDoneActionPerformed(evt);
+            }
+        });
+
+        jBtnBack.setText("Logout");
+        jBtnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnBackActionPerformed(evt);
             }
         });
 
@@ -127,13 +135,17 @@ public class StudentJFrame extends javax.swing.JFrame {
                                 .addComponent(txtFieldGpa, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(176, 176, 176)
-                        .addComponent(btnDone)))
+                        .addComponent(btnDone))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jBtnBack)))
                 .addContainerGap(168, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addComponent(jBtnBack)
+                .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtFieldFname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -185,6 +197,13 @@ public class StudentJFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnDoneActionPerformed
 
+    private void jBtnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnBackActionPerformed
+        // TODO add your handling code here:
+        LoginJFrame view = new LoginJFrame();
+                view.setVisible(true);
+                dispose();
+    }//GEN-LAST:event_jBtnBackActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -205,6 +224,7 @@ public class StudentJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDone;
+    private javax.swing.JButton jBtnBack;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -3,7 +3,10 @@ package neu.edu.csye6200.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ *
+ * @author moinu
+ */
 public class Immunization {
     private int studentId;
     private int immunId;

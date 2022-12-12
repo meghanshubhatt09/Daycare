@@ -1,6 +1,9 @@
 
 package neu.edu.csye6200.model;
-
+/**
+ *
+ * @author moinu
+ */
 public class Rules {
 	
     private final int minAge;

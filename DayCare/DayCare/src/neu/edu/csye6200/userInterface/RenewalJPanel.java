@@ -10,7 +10,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author 15085
+ * @author moinu
  */
 public class RenewalJPanel extends javax.swing.JPanel {
 

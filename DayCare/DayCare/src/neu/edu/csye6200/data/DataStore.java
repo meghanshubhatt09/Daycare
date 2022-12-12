@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import neu.edu.csye6200.model.*;
 
+/**
+ *
+ * @author moinu
+ */
+
 public class DataStore {
     private static DataStore dataStore;
     private List<Rules> rules;

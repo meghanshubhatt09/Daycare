@@ -15,7 +15,7 @@ import neu.edu.csye6200.util.FileIO;
 
 /**
  *
- * @author 15085
+ * @author moinu
  */
 public class TeacherDataManagement implements DataManagement<Teacher>{
 //    private static TeacherDataManagement teacherDataManagement;

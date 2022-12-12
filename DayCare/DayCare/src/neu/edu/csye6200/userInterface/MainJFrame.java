@@ -5,6 +5,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+/**
+ *
+ * @author moinu
+ */
+
 public class MainJFrame extends javax.swing.JFrame {
    private StudentJPanel studentJPanel;
    private TeacherJPanel teacherJPanel;

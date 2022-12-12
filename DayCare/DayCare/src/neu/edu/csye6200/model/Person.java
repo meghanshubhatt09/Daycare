@@ -2,7 +2,10 @@
 package neu.edu.csye6200.model;
 
 import java.util.Date;
-
+/**
+ *
+ * @author moinu
+ */
 public class Person {
     public String firstName;
 	public String lastName;

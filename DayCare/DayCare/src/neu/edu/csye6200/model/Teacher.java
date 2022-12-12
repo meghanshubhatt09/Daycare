@@ -5,7 +5,10 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+/**
+ *
+ * @author moinu
+ */
 public class Teacher extends Person{
     private int teachID;
     private boolean isAssigned;

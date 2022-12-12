@@ -13,7 +13,7 @@ import javax.swing.JToggleButton;
 
 /**
  *
- * @author 15085
+ * @author moinu
  */
 public class StudentJPanel extends javax.swing.JPanel {
 

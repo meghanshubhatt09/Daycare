@@ -4,6 +4,10 @@ package neu.edu.csye6200.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author moinu
+ */
 public class ClassRoom {
         private String name;
 	private int size;
