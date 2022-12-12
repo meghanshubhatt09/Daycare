@@ -43,7 +43,7 @@ public class Student extends Person{
         this.motherName = motherName;
         this.address = address;
         this.phoneNo = phoneNo;
-        this.GPA = 0;
+        this.GPA = GPA;
         this.emailid = emailid;
         this.password = password;
         immunizations =  new ArrayList<>();
