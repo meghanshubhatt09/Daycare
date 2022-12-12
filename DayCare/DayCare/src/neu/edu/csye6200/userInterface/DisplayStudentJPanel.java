@@ -7,7 +7,9 @@ package neu.edu.csye6200.userInterface;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+import neu.edu.csye6200.controller.StudentController;
 import neu.edu.csye6200.controller.TeacherController;
+import neu.edu.csye6200.interfaces.StudentDataMangementFactory;
 import neu.edu.csye6200.model.Student;
 import neu.edu.csye6200.model.Teacher;
 
@@ -103,16 +105,25 @@ public class DisplayStudentJPanel extends javax.swing.JPanel {
 
     private void jButtonUpdateGPAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUpdateGPAActionPerformed
         // TODO add your handling code here:
-                int selectedRowIndex = jTableDisplayStudent.getSelectedRow();
+        
+       
+        int selectedRowIndex = jTableDisplayStudent.getSelectedRow();
         
         if (selectedRowIndex < 0){
             JOptionPane.showMessageDialog(this, "Please select the record");
             return; 
         }
         
-        TeacherController teacher = new TeacherController();
-        teacher.getTeacherStudents(teacher);
+        TeacherController tt = new TeacherController();
+        Student ss = (Student) tt.getTeacherStudents(teacher).get(selectedRowIndex);
         
+        double GPA = (Double.parseDouble(jTextFieldUpdateGPA.getText()));
+         
+        Student student = new Student(ss.getFirstName(),ss.getLastName(),ss.getRegisterTime(),ss.getStuId(),ss.getAge(),ss.getFatherName(),ss.getMotherName(),ss.getAddress(),ss.getPhoneNo(), GPA,ss.getEmailid(),ss.getPassword());
+        
+        StudentDataMangementFactory.getFactoryInstance().getObject().updateOneObject(student);
+        
+        refreshTable(teacher);
         
         
     }//GEN-LAST:event_jButtonUpdateGPAActionPerformed
@@ -129,7 +140,7 @@ public class DisplayStudentJPanel extends javax.swing.JPanel {
     
      public void refreshTable(Teacher t){
     int rowCount = jTableDisplayStudent.getRowCount();
-         System.out.println(rowCount);
+         
     DefaultTableModel model = (DefaultTableModel) jTableDisplayStudent.getModel();
     for(int i=rowCount-1;i>=0;i--){
         model.removeRow(i);
@@ -137,7 +148,7 @@ public class DisplayStudentJPanel extends javax.swing.JPanel {
         TeacherController teacher = new TeacherController();
         
     for (Student s : teacher.getTeacherStudents(t)) {
-        System.out.println(s);
+        
         Object row[] = new Object[4];
         row[0] = s.getFirstName();
         row[1] = s.getLastName();
