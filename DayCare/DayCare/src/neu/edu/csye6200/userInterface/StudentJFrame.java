@@ -59,6 +59,7 @@ public class StudentJFrame extends javax.swing.JFrame {
         btnDone = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setText("First Name:");
 

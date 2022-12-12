@@ -54,6 +54,8 @@ public class TeacherProfileJPanel extends javax.swing.JPanel {
         jTextFieldEmail = new javax.swing.JTextField();
         jTextFieldClassAssigned = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel1.setText("Last Name :");
 
         jLabel2.setText("First Name : ");

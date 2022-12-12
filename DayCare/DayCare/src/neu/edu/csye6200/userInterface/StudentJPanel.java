@@ -53,7 +53,6 @@ public class StudentJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Student Id:");
 
-        updateStudentBtn.setBackground(new java.awt.Color(102, 255, 255));
         updateStudentBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         updateStudentBtn.setText("View or Update Student Record");
         updateStudentBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -62,7 +61,6 @@ public class StudentJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnAddStudent.setBackground(new java.awt.Color(102, 255, 255));
         btnAddStudent.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnAddStudent.setText("Add New Student");
         btnAddStudent.addActionListener(new java.awt.event.ActionListener() {

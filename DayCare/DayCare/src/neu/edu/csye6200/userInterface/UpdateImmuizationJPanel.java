@@ -80,7 +80,6 @@ public class UpdateImmuizationJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnUpdateImmunization.setBackground(new java.awt.Color(102, 255, 255));
         btnUpdateImmunization.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnUpdateImmunization.setText("Update Immunization");
         btnUpdateImmunization.addActionListener(new java.awt.event.ActionListener() {

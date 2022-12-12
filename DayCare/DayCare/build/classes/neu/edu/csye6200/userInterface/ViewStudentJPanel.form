@@ -163,9 +163,6 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnBack">
       <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="99" type="rgb"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="&lt;Back "/>
       </Properties>
       <Events>
@@ -293,9 +290,6 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnStudenAssignedToATeacher">
       <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="66" type="rgb"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Students Assigned to a Single Teacher"/>
       </Properties>
       <Events>

@@ -137,7 +137,6 @@ public class TeacherJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblTeacherRecords);
 
-        btnAddTeacher.setBackground(new java.awt.Color(102, 255, 255));
         btnAddTeacher.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         btnAddTeacher.setText("Add New Teacher");
         btnAddTeacher.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +145,6 @@ public class TeacherJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnUpdateTeacher.setBackground(new java.awt.Color(0, 255, 255));
         btnUpdateTeacher.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         btnUpdateTeacher.setText("Update Selected Teacher");
         btnUpdateTeacher.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +153,6 @@ public class TeacherJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDelete.setBackground(new java.awt.Color(102, 255, 255));
         btnDelete.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         btnDelete.setText("Delete Selected Teacher");
 

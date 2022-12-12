@@ -51,6 +51,9 @@ public class DisplayStudentJPanel extends javax.swing.JPanel {
         jTextFieldUpdateGPA = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 255, 255));
+
+        jTableDisplayStudent.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTableDisplayStudent.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -62,6 +65,7 @@ public class DisplayStudentJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTableDisplayStudent);
 
         jButtonUpdateGPA.setText("Update");
+        jButtonUpdateGPA.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButtonUpdateGPA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonUpdateGPAActionPerformed(evt);

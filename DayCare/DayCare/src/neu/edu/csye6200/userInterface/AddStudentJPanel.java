@@ -51,8 +51,9 @@ public class AddStudentJPanel extends javax.swing.JPanel {
         jLabel10 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 51, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Add Student");
 
@@ -72,7 +73,6 @@ public class AddStudentJPanel extends javax.swing.JPanel {
 
         jLabel6.setText("MotherName:");
 
-        btnAdd.setBackground(new java.awt.Color(153, 255, 255));
         btnAdd.setText("Add Student");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -58,7 +58,6 @@ public class AddTeacherJPanel extends javax.swing.JPanel {
 
         jLabel3.setText("Last Name:");
 
-        btnAdd.setBackground(new java.awt.Color(102, 255, 255));
         btnAdd.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnAdd.setText("Add New Teacher");
 

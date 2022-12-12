@@ -78,7 +78,6 @@ public class ViewStudentJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblStudents);
 
-        btnBack.setBackground(new java.awt.Color(153, 255, 255));
         btnBack.setText("<Back ");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,7 +122,6 @@ public class ViewStudentJPanel extends javax.swing.JPanel {
         ));
         jScrollPane3.setViewportView(tblStudentRecordForTeacher);
 
-        btnStudenAssignedToATeacher.setBackground(new java.awt.Color(102, 255, 255));
         btnStudenAssignedToATeacher.setText("Students Assigned to a Single Teacher");
         btnStudenAssignedToATeacher.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
