@@ -51,7 +51,10 @@ public class StudentController {
 
      
      
-     
+     public StudentController() 
+     {
+         
+     }
      
     private StudentController(StudentJPanel studentJPanel) {
         this.studentJPanel = studentJPanel;
@@ -138,6 +141,10 @@ public class StudentController {
         studentJPanel.getUpdateStudentJPanel().getTxtFieldMotherName().setText(s.getMotherName());
         studentJPanel.getUpdateStudentJPanel().getTxtFieldStudentId().setText(Integer.toString(s.getStuId()));
     }
+    
+    
+    
+    
     public void updateStudentRecords(Student s){
         this.studentJPanel.getUpdateStudentJPanel().getBtnUpdate().addMouseListener(new MouseAdapter() {
         public void mouseClicked(MouseEvent e) {
