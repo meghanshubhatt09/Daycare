@@ -153,10 +153,10 @@ public class StudentController {
         String age =  studentJPanel.getUpdateStudentJPanel().getTxtFieldAge().getText();
         String fatherName = studentJPanel.getUpdateStudentJPanel().getTxtFieldFatherName().getText();
         String motherName = studentJPanel.getUpdateStudentJPanel().getTxtFieldMotherName().getText();
-        String address = studentJPanel.getUpdateStudentJPanel().getTxtFieldAddress().getText();
-        String phoneNo = studentJPanel.getUpdateStudentJPanel().getTxtFieldPhone().getText();
-        
-        
+//        String address = studentJPanel.getUpdateStudentJPanel().getTxtFieldAddress().getText();
+//        String phoneNo = studentJPanel.getUpdateStudentJPanel().getTxtFieldPhone().getText();
+        String address = s.getAddress();
+        int phoneNo = s.getPhoneNo();
         
         
         
@@ -167,7 +167,7 @@ public class StudentController {
                JOptionPane.showMessageDialog(null, "Please enter an integer for age!","Warning",JOptionPane.WARNING_MESSAGE);
                return;
             }
-            Student student = new Student(fName,lName,s.getRegisterTime(),s.getStuId(),Integer.parseInt(age),fatherName,motherName,address,Integer.parseInt(phoneNo), s.getGPA(),s.getEmailid(),s.getPassword());
+            Student student = new Student(fName,lName,s.getRegisterTime(),s.getStuId(),Integer.parseInt(age),fatherName,motherName,address,phoneNo, s.getGPA(),s.getEmailid(),s.getPassword());
             studentCurrent = student;
             StudentDataMangementFactory.getFactoryInstance().getObject().updateOneObject(student);
             JOptionPane.showMessageDialog(null, "Updated Successfully!");

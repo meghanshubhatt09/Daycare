@@ -193,13 +193,13 @@ public ClassRoom getClassRoom(String classRoomName){
         
         for (int i=0; i<teachers.size();i++){
             if(t.getTeachID()==teachers.get(i).getTeachID()){
-                if(i+3<teachers.size()){
+                if(i+3<students.size()){
                     for(int j=i;(j<i+3);j++){
                         outStudent.add(students.get(j));
                     }
                 }
                 else{
-                    for (int j=i;(j<teachers.size());j++){
+                    for (int j=i;(j<students.size());j++){
                         outStudent.add(students.get(j));
                     }
                 }

@@ -118,12 +118,12 @@ public class DisplayStudentJPanel extends javax.swing.JPanel {
         Student ss = (Student) tt.getTeacherStudents(teacher).get(selectedRowIndex);
         
         double GPA = (Double.parseDouble(jTextFieldUpdateGPA.getText()));
-         
-        Student student = new Student(ss.getFirstName(),ss.getLastName(),ss.getRegisterTime(),ss.getStuId(),ss.getAge(),ss.getFatherName(),ss.getMotherName(),ss.getAddress(),ss.getPhoneNo(), GPA,ss.getEmailid(),ss.getPassword());
+        ss.setGPA(GPA);
         
-        StudentDataMangementFactory.getFactoryInstance().getObject().updateOneObject(student);
-        
+        StudentDataMangementFactory.getFactoryInstance().getObject().updateOneObject(ss);
+        JOptionPane.showMessageDialog(null, "Updated Successfully!");
         refreshTable(teacher);
+        
         
         
     }//GEN-LAST:event_jButtonUpdateGPAActionPerformed
@@ -149,6 +149,7 @@ public class DisplayStudentJPanel extends javax.swing.JPanel {
         
     for (Student s : teacher.getTeacherStudents(t)) {
         
+        System.out.print(s);
         Object row[] = new Object[4];
         row[0] = s.getFirstName();
         row[1] = s.getLastName();
