@@ -160,7 +160,7 @@ public class TeacherController {
                 status = false;
             }
             
-                Teacher t = new Teacher(fName,lName,new Date(),0,status,className,email,password);
+                Teacher t = new Teacher(fName,lName,new Date(),0,status,className,email,password,0);
                TeacherDataManagementFactory.getFactoryInstance().getObject().registerOneObject(t);
                 setNewTeacherRecord();
                 JOptionPane.showMessageDialog(null,"Added Successfully");
