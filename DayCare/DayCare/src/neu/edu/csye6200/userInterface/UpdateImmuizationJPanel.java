@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author 15085
+ * @author moinu
  */
 public class UpdateImmuizationJPanel extends javax.swing.JPanel {
 

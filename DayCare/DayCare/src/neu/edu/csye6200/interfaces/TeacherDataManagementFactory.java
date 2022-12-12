@@ -5,6 +5,11 @@
  */
 package neu.edu.csye6200.interfaces;
 
+/**
+ *
+ * @author moinu
+ */
+
 public class TeacherDataManagementFactory extends AbstractDataManagementFactory{
     private static TeacherDataManagementFactory factoryInstance =null; 
     private static TeacherDataManagement teacherDataManagement=null;

@@ -22,6 +22,10 @@ import neu.edu.csye6200.userInterface.DisplayStudentJPanel;
 import neu.edu.csye6200.userInterface.TeacherJPanel;
 import neu.edu.csye6200.userInterface.ViewStudentJPanel;
 
+/**
+ *
+ * @author moinu
+ */
 
 public class TeacherController {
     private static TeacherController instance;

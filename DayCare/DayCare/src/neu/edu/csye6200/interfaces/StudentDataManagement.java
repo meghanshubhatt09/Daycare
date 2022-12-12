@@ -13,6 +13,10 @@ import java.util.logging.Logger;
 import neu.edu.csye6200.model.Student;
 import neu.edu.csye6200.util.FileIO;
 
+/**
+ *
+ * @author moinu
+ */
     public class StudentDataManagement implements DataManagement<Student>{
         @Override
 	public List<Student> getDataList() {

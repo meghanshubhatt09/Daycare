@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author 15085
+ * @author moinu
  */
 public class UpdateTeacherJPanel extends javax.swing.JPanel {
 

@@ -15,7 +15,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author MVK
+ * @author moinu
  */
 public class StateRulesJPanel extends javax.swing.JPanel {
     private JPanel userProcessControllerJPanel;

@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author 15085
+ * @author moinu
  */
 public class AddImmnunizationJPanel extends javax.swing.JPanel {
 

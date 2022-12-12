@@ -8,6 +8,11 @@ import java.awt.event.MouseEvent;
 
 import neu.edu.csye6200.userInterface.MainJFrame;
 
+/**
+ *
+ * @author moinu
+ */
+
 public class MainController {
     private MainJFrame view;
     private ClassRoomController classController;

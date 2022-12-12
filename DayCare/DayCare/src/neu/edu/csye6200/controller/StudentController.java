@@ -40,6 +40,11 @@ import neu.edu.csye6200.model.Student;
 import neu.edu.csye6200.model.Teacher;
 import neu.edu.csye6200.userInterface.StudentJPanel;
 
+/**
+ *
+ * @author moinu
+ */
+
 public class StudentController {
     private StudentJPanel studentJPanel;
     private Student studentCurrent;

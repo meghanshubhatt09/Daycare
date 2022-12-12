@@ -7,7 +7,7 @@ package neu.edu.csye6200.interfaces;
 
 /**
  *
- * @author 15085
+ * @author moinu
  */
 public class ImmunizationDataManagementFactory extends AbstractDataManagementFactory{
     private static ImmunizationDataManagementFactory factoryInstance =null;

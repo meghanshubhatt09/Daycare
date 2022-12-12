@@ -12,7 +12,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author 15085
+ * @author moinu
  */
 public class TeacherJPanel extends javax.swing.JPanel {
 

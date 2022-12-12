@@ -15,7 +15,7 @@ import neu.edu.csye6200.model.Teacher;
 
 /**
  *
- * @author meghanshubhatt
+ * @author moinu
  */
 public class DisplayStudentJPanel extends javax.swing.JPanel {
 
