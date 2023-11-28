@@ -1,6 +1,7 @@
 
 package neu.edu.csye6200.util;
 
+import io.github.pixee.security.BoundedLineReader;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -60,7 +61,7 @@ public class FileIO<T> {
 		try (BufferedReader inLine = new BufferedReader(new FileReader(pathToCsvFile)))
 		{
 			String inputLine = null;	// read one line from file at a time
-			while ((inputLine = inLine.readLine()) != null){
+			while ((inputLine = BoundedLineReader.readLine(inLine, 5_000_000)) != null){
 				// Parse line converting each string token into a Student object field
 				String[] fields = inputLine.split(",");
 				if(pathToCsvFile.equalsIgnoreCase("student.csv")) {
