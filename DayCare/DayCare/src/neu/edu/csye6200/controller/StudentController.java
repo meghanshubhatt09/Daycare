@@ -245,7 +245,7 @@ public class StudentController {
             String duration = studentJPanel.getUpdateStudentJPanel().getUpdateImmunJPanel().getTextFieldDuration().getText();
             String date = studentJPanel.getUpdateStudentJPanel().getUpdateImmunJPanel().getTextFieldDate().getText();
             String id  = studentJPanel.getUpdateStudentJPanel().getUpdateImmunJPanel().getTextFieldId().getText();
-            if(immunName.equals("") || duration.equals("") || date.equals("")||id.equals("")){
+            if("".equals(immunName) || "".equals(duration) || "".equals(date)||"".equals(id)){
                 JOptionPane.showMessageDialog(null,"All fields are required!");
                 return;
                 
@@ -304,7 +304,7 @@ studentJPanel.getUpdateStudentJPanel().getAddImmunJPanel().getTextFieldName().se
             String duration = studentJPanel.getUpdateStudentJPanel().getAddImmunJPanel().getTextFieldDuration().getText();
             String date = studentJPanel.getUpdateStudentJPanel().getAddImmunJPanel().getTextFieldDate().getText();
             //String id  = studentJPanel.getUpdateStudentJPanel().getAddImmunJPanel().getTextFieldId().getText();
-            if(immunName.equals("") || duration.equals("") || date.equals("")){
+            if("".equals(immunName) || "".equals(duration) || "".equals(date)){
                 JOptionPane.showMessageDialog(null,"All fields are required!");
                 return; 
             }

@@ -121,7 +121,7 @@ public class TeacherController {
             // selectedRow contains row selected
             String fName = teacherJPanel.getUpdateTeacherJPanel().getTxtFieldFName().getText();
             String lName = teacherJPanel.getUpdateTeacherJPanel().getTxtFieldLName().getText();
-            if(fName.equals("") || lName.equals("")){
+            if("".equals(fName) || "".equals(lName)){
                JOptionPane.showMessageDialog(null,"Enter both fields as both are required" );
                return;
             }
@@ -146,7 +146,7 @@ public class TeacherController {
             String className =  (String)teacherJPanel.getAddTeacherJPanel().getComboBoxClassAssigned().getSelectedItem();
             String email  = teacherJPanel.getAddTeacherJPanel().getTxtEmail().getText();
             String password = teacherJPanel.getAddTeacherJPanel().getTxtPassword().getText();
-            if(fName.equals("") || lName.equals("") || className.equalsIgnoreCase("--Select--") ){
+            if("".equals(fName) || "".equals(lName) || "--Select--".equalsIgnoreCase(className) ){
                JOptionPane.showMessageDialog(null,"Enter all fields, as all fields are required" );
                return;
             }
@@ -160,7 +160,7 @@ public class TeacherController {
             }
             
             boolean status = true;
-            if(className.equalsIgnoreCase("No Class Assigned")){
+            if("No Class Assigned".equalsIgnoreCase(className)){
                 status = false;
             }
             

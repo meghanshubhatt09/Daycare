@@ -63,7 +63,7 @@ public class FileIO<T> {
 			while ((inputLine = inLine.readLine()) != null){
 				// Parse line converting each string token into a Student object field
 				String[] fields = inputLine.split(",");
-				if(pathToCsvFile.equalsIgnoreCase("student.csv")) {
+				if("student.csv".equalsIgnoreCase(pathToCsvFile)) {
                                         String fname = fields[0];
 					String lname = fields[1];
                                         Date registerTime=new SimpleDateFormat("dd/MM/yyyy").parse(fields[2]); 
@@ -79,12 +79,12 @@ public class FileIO<T> {
                                         T s = (T)new Student(fname,lname,registerTime,id,age,fatherName,motherName,address,phoneNo,GPA,email,password);
 					data.add(s);	
 				}
-				else if(pathToCsvFile.equalsIgnoreCase("teacher.csv")){
+				else if("teacher.csv".equalsIgnoreCase(pathToCsvFile)){
 					String fname = fields[0];
 					String lname = fields[1];
                                         Date registerTime=new SimpleDateFormat("dd/MM/yyyy").parse(fields[2]);
 					int id = Integer.parseInt(fields[3]);
-                                        boolean isAssigned = fields[4].equalsIgnoreCase("true")?true:false;
+                                        boolean isAssigned = "true".equalsIgnoreCase(fields[4])?true:false;
                                         String classRoomName = isAssigned?fields[5]:null;
                                         String email = fields[6];
                                         String password = fields[7];
@@ -92,13 +92,13 @@ public class FileIO<T> {
                                         T t = (T) new Teacher(fname,lname,registerTime,id,isAssigned,classRoomName,email,password,credit);
 					data.add(t);	
 				}
-                                else if(pathToCsvFile.equalsIgnoreCase("stuImm.csv")){
+                                else if("stuImm.csv".equalsIgnoreCase(pathToCsvFile)){
                                     int id = new Integer(fields[0]);
                                     int immunId= new Integer(fields[1]);
                                     String immunName = fields[2];
                                     String duration = fields[3];
                                     Date immunDate=new SimpleDateFormat("dd/MM/yyyy").parse(fields[4]);
-                                    boolean status =  fields[5].equalsIgnoreCase("true")?true:false; 
+                                    boolean status =  "true".equalsIgnoreCase(fields[5])?true:false; 
                                     T t = (T) new Immunization(id,immunId,immunName,duration,immunDate,status);
 				     data.add(t);
                                 }

@@ -123,8 +123,8 @@ public class LoginJFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
        
-        if (txtFieldUsername.getText().equalsIgnoreCase("admin") 
-                && txtFieldPassword.getText().equalsIgnoreCase("admin") )
+        if ("admin".equalsIgnoreCase(txtFieldUsername.getText()) 
+                && "admin".equalsIgnoreCase(txtFieldPassword.getText()) )
         {
              
             MainJFrame mainjframe = new MainJFrame();
